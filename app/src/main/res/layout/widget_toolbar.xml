@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.example.domiter.fileexplorer.view.widget.PathViewCompatibleToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:colorPrimary"
+    android:elevation="4dp"
+    android:contentInsetStart="@dimen/item_text_margin_left"
+    android:minHeight="?android:actionBarSize"
+    android:popupTheme="?android:actionBarPopupTheme"
+    android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar" >
+</com.example.domiter.fileexplorer.view.widget.PathViewCompatibleToolbar>

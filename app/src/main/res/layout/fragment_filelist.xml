@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.example.domiter.fileexplorer.view.widget.WaitingViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flipper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:inAnimation="@android:anim/fade_in"
+    android:outAnimation="@android:anim/fade_out"
+    android:clickable="true"
+    android:animateFirstView="false">
+
+    <!-- Content -->
+    <FrameLayout
+        android:id="@+id/list_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- List -->
+        <com.example.domiter.fileexplorer.view.widget.DividerGridView
+            android:id="@android:id/list"
+            android:numColumns="@integer/grid_columns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:clipToPadding="false"
+            android:fastScrollEnabled="true"
+            android:scrollbarStyle="outsideOverlay" />
+
+        <!-- Empty state -->
+        <LinearLayout
+            android:id="@android:id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="24dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:id="@+id/empty_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/this_folder_is_empty"
+                style="@style/TextAppearance.Dir.Empty" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Loading -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textColor="?android:attr/textColorTertiary" />
+    </LinearLayout>
+
+    <!-- No permissions -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="24dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/permissions_denied"
+            style="@style/TextAppearance.Dir.Empty" />
+
+        <ImageView
+            android:id="@+id/permissions_button"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_empty_state_circle"
+            android:scaleType="centerInside"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/ic_button_permission"
+            android:stateListAnimator="@anim/state_list_anim_material"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+</com.example.domiter.fileexplorer.view.widget.WaitingViewFlipper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/browseRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <com.example.domiter.fileexplorer.view.widget.AnimatedFileListContainer
+        android:id="@+id/zoomview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/colorBackground">
+
+        <include layout="@layout/fragment_filelist" />
+    </com.example.domiter.fileexplorer.view.widget.AnimatedFileListContainer>
+
+</LinearLayout>

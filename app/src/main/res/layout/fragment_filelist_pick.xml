@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+        <!-- We switch between these programmatically based on the type of pick request. -->
+        <ViewFlipper
+            android:background="?attr/colorBackgroundSecondary"
+            android:layout_alignParentBottom="true"
+        	android:id="@+id/modeSelector"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:elevation="8dp" >
+
+            <LinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="@string/directory_pick" />
+            </LinearLayout>
+
+            <com.example.domiter.fileexplorer.view.widget.PickBar
+                android:id="@+id/pickBar"
+                android:gravity="center_vertical"
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </ViewFlipper>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/modeSelector"
+        android:layout_alignParentTop="true"
+        layout="@layout/fragment_filelist_simple" />
+
+</RelativeLayout>

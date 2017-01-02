@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <attr name="colorCabBackground" format="reference|color" />
+    <attr name="colorBackgroundSecondary" format="reference|color" />
+    <attr name="colorPrimaryLight" format="reference|color" />
+    <attr name="colorIcon" format="reference|color" />
+    <attr name="colorIconExpandedCabAction" format="reference|color" />
+    <attr name="colorActionModeStatusBar" format="reference|color" />
+    <attr name="colorFadeCovered" format="reference|color" />
+</resources>

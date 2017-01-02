@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base text appearance values -->
+    <style name="TextAppearance.Dir.Large" parent="android:TextAppearance.Material.Title">
+        <!--<item name="android:fontFamily" tools:ignore="NewApi">sans-serif-thin</item>-->
+    </style>
+    <style name="TextAppearance.Dir.Medium" parent="android:TextAppearance.Material.Subhead">
+        <!--<item name="android:fontFamily" tools:ignore="NewApi">sans-serif-light</item>-->
+    </style>
+    <style name="TextAppearance.Dir.Small" parent="android:TextAppearance.Material.Body1">
+        <!--<item name="android:fontFamily" tools:ignore="NewApi">sans-serif-condensed</item>-->
+    </style>
+
+    <style name="TextAppearance.Dir.Empty" parent="TextAppearance.Dir.Medium">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <!-- Helper styles -->
+    <style name="dialogDetailsPrimaryText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    <style name="dialogDetailsSecondaryText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+</resources>

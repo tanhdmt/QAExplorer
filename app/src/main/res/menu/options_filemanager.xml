@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_search"
+        android:alphabeticShortcut="s"
+        android:icon="@drawable/ic_action_search"
+        android:showAsAction="ifRoom"
+        android:menuCategory="container"
+        android:orderInCategory="10"
+        android:title="@string/menu_search">
+    </item>
+</menu>
