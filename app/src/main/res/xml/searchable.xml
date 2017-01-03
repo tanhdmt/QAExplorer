@@ -23,6 +23,6 @@
     android:voiceSearchMode="showVoiceSearchButton|launchRecognizer"
     android:queryAfterZeroResults="false"
 
-    android:searchSuggestAuthority="com.veniosg.dir.search.suggest"
+    android:searchSuggestAuthority="com.example.domiter.fileexplorer.search.suggest"
     android:searchSuggestIntentAction="android.intent.action.VIEW" >
 </searchable>
